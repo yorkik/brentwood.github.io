@@ -10,74 +10,59 @@
         padding: 0;
         box-sizing: border-box;
       }
-
       body {
         font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
-        background-color: #1e1e1e; /* Темный фон */
-        color: #ffffff; /* Белый текст */
+        background-color: #1e1e1e;
+        color: #ffffff;
         line-height: 1.6;
       }
-
       .container {
         max-width: 1200px;
         margin: 0 auto;
         padding: 0 20px;
       }
-
-      /* Шапка */
       header {
-        background-color: #2c2f33; /* Цвет фона шапки */
+        background-color: #2c2f33;
         padding: 1rem 0;
         box-shadow: 0 2px 4px rgba(0, 0, 0, 0.5);
-        position: sticky; /* Фиксируем шапку */
+        position: sticky;
         top: 0;
         z-index: 100;
       }
-
       nav {
         display: flex;
-        justify-content: center; /* Центрируем содержимое */
+        justify-content: center;
         align-items: center;
       }
-
       .logo {
         font-size: 1.8rem;
-        color: #ffcc00; /* Желтый цвет для названия сервера */
+        color: #ffcc00;
         font-weight: bold;
       }
-
-      /* Основной контент */
       main {
         padding: 2rem 0;
       }
-
       section {
         margin-bottom: 3rem;
         padding: 2rem;
-        background-color: #2c2f33; /* Цвет фона секций */
+        background-color: #2c2f33;
         border-radius: 8px;
         box-shadow: 0 4px 6px rgba(0, 0, 0, 0.3);
       }
-
       h2 {
-        color: #ffcc00; /* Желтый цвет заголовков */
+        color: #ffcc00;
         margin-bottom: 1rem;
         font-size: 1.5rem;
       }
-
       p {
         margin-bottom: 1rem;
       }
-
       ul {
         padding-left: 1.5rem;
       }
-
       li {
         margin-bottom: 0.5rem;
       }
-
-      /* Главная страница */
       .hero {
         text-align: center;
         background-image: linear-gradient(
@@ -92,264 +77,198 @@
         margin-top: 3rem;
         margin-bottom: 3rem;
       }
-
       .hero h1 {
         font-size: 3rem;
         margin-bottom: 1rem;
         color: #ffcc00;
         padding: 0 2rem;
       }
-
       .hero p {
         font-size: 1.2rem;
         max-width: 600px;
         margin: 0 auto;
         padding: 0 2rem;
       }
-
-      /* Кнопка */
       .btn {
         display: inline-block;
         padding: 0.8rem 1.5rem;
-        background-color: #ebbc00; /* Цвет Discord */
+        background-color: #ebbc00;
         color: white;
         text-decoration: none;
         border-radius: 5px;
         margin-top: 1rem;
         transition: background-color 0.3s ease;
       }
-
       .btn:hover {
-        background-color: #c09a00; /* Темнее цвет Discord */
+        background-color: #c09a00;
       }
-
-      /* Секция FAQ */
       .faq-item {
         margin-bottom: 1.5rem;
       }
-
       .faq-question {
         font-weight: bold;
         cursor: pointer;
         padding: 0.5rem;
-        background-color: #36393f; /* Цвет фона вопроса */
+        background-color: #36393f;
         border-radius: 5px;
       }
-
-      /* Стили для плавного открытия/закрытия FAQ */
       .faq-answer {
         height: 0;
         opacity: 0;
         overflow: hidden;
-        padding: 0 1rem; /* Начальный паддинг 0 */
+        padding: 0 1rem;
         transition: height 0.3s ease-out, opacity 0.3s ease-out,
           padding 0.3s ease-out;
       }
-
       .faq-answer.active {
         opacity: 1;
-        padding: 0.5rem 1rem; /* Финальный паддинг */
+        padding: 0.5rem 1rem;
       }
-
-      /* Стили для таблицы биндов */
       .table-container {
-        overflow-x: auto; /* Позволяет прокручивать таблицу по горизонтали на мобильных */
+        overflow-x: auto;
       }
-
       table {
         width: 100%;
         border-collapse: collapse;
-        background-color: #2c2f33; /* Цвет фона таблицы */
+        background-color: #2c2f33;
         font-size: 0.95rem;
       }
-
       th,
       td {
         padding: 0.75rem;
         text-align: left;
-        border-bottom: 1px solid #36393f; /* Разделительные линии между строками */
+        border-bottom: 1px solid #36393f;
       }
-
       th {
-        background-color: #23272a; /* Цвет заголовков */
+        background-color: #23272a;
         font-weight: bold;
-        color: #ffcc00; /* Желтый цвет заголовков */
+        color: #ffcc00;
       }
-
-      /* Альтернирующие строки */
       tbody tr:nth-child(even) {
-        background-color: #2c2f33; /* Цвет четных строк */
+        background-color: #2c2f33;
       }
-
       tbody tr:nth-child(odd) {
-        background-color: #282b2e; /* Цвет нечетных строк */
+        background-color: #282b2e;
       }
-
-      /* Стили для кода внутри таблицы */
       code {
-        background-color: #36393f; /* Цвет фона для кода */
+        background-color: #36393f;
         color: #ffffff;
         padding: 0.2rem 0.4rem;
         border-radius: 3px;
         font-family: "Courier New", Courier, monospace;
         font-size: 0.9em;
       }
-
-      /* Футер */
       footer {
-        background-color: #23272a; /* Цвет темнее чем шапка */
+        background-color: #23272a;
         text-align: center;
         padding: 1.5rem 0;
-        margin-top: auto; /* Прижимает футер к низу */
+        margin-top: auto;
       }
-
-      /* Стили для полного списка правил */
       #rules_full .rule-category {
         margin-bottom: 1rem;
       }
-
       #rules_full .rule-category h3 {
-        color: #ffcc00; /* Желтый цвет для заголовков категорий */
+        color: #ffcc00;
         font-size: 1.2rem;
         margin-bottom: 0.5rem;
         border-bottom: 1px solid #36393f;
         padding-bottom: 0.3rem;
       }
-
       #rules_full ul {
-        list-style-type: none; /* Убираем стандартные маркеры */
-        padding-left: 1rem; /* Отступ слева для вложенных списков */
+        list-style-type: none;
+        padding-left: 1rem;
         margin-bottom: 1rem;
       }
-
       #rules_full li {
-        margin-bottom: 0.3rem; /* Отступ между пунктами */
-        line-height: 1.4; /* Улучшаем читаемость */
+        margin-bottom: 0.3rem;
+        line-height: 1.4;
       }
-
-      /* Стили для основных заголовков правил (например, 0.x, 1.x, ADMx.x) */
       #rules_full li strong {
-        color: #ffcc00; /* Желтый цвет для номера/названия правила */
+        color: #ffcc00;
       }
-
-      /* Стили для описания правил */
       #rules_full li p {
-        margin: 0.2rem 0 0.5rem 0; /* Отступы для абзацев описания */
-        color: #cccccc; /* Slightly lighter than main text */
+        margin: 0.2rem 0 0.5rem 0;
+        color: #cccccc;
       }
-
-      /* Стили для подпунктов (например, 0.12.1, 1.18.2) */
       #rules_full li ul li strong {
-        color: #ebbc00; /* Чуть более тусклый желтый для подпунктов */
-        font-size: 0.95em; /* Чуть меньше размер */
+        color: #ebbc00;
+        font-size: 0.95em;
       }
-
-      /* Стили для "Дополнительные правила RolePlay" */
       #rules_full .additional-rp-rules ul {
-        padding-left: 0.5rem; /* Меньше отступа для подсекции */
+        padding-left: 0.5rem;
       }
-
       #rules_full .additional-rp-rules ul li strong {
-        color: #cccc00; /* Slightly different yellow for sub-sections */
+        color: #cccc00;
       }
-
-      /* Стили для "Правила профессий" */
       #rules_full .job-rules ul {
         padding-left: 0.5rem;
       }
-
       #rules_full .job-rules .job-category {
         font-weight: bold;
-        color: #ff9900; /* Оранжевый для категорий профессий */
+        color: #ff9900;
         margin-top: 0.8rem;
         margin-bottom: 0.3rem;
       }
-
       #rules_full .job-rules .job-name {
         font-weight: bold;
-        color: #ffcc66; /* Светло-оранжевый для названий профессий */
+        color: #ffcc66;
         margin-top: 0.5rem;
       }
-
-      /* Стили для "Правила Администрации" */
       #rules_full .admin-rules ul {
         padding-left: 0.5rem;
       }
-
       #rules_full .admin-rules .admin-section {
         font-weight: bold;
-        color: #99ff00; /* Зеленый для подсекций админ-правил */
+        color: #99ff00;
         margin-top: 0.8rem;
         margin-bottom: 0.3rem;
       }
-
-      /* Общие стили для кода внутри правил (если нужно) */
-      /* #rules_full code {
-    background-color: #36393f;
-    color: #ffffff;
-    padding: 0.1rem 0.3rem;
-    border-radius: 3px;
-    font-family: 'Courier New', Courier, monospace;
-    font-size: 0.85em;
-} */
-
-      /* Стили для аккордеона правил */
       .rules-accordion {
         margin-top: 1rem;
       }
-
       .rules-accordion-item {
         margin-bottom: 1rem;
       }
-
       .rules-accordion-header {
         font-weight: bold;
         cursor: pointer;
         padding: 0.5rem;
-        background-color: #36393f; /* Цвет фона вопроса */
+        background-color: #36393f;
         border-radius: 5px;
         display: flex;
         justify-content: space-between;
         align-items: center;
       }
-
       .rules-accordion-header::after {
         content: "+";
         font-weight: bold;
         transition: transform 0.3s ease;
       }
-
       .rules-accordion-header.active::after {
         content: "-";
         transform: rotate(180deg);
       }
-
       .rules-accordion-content {
         height: 0;
         opacity: 0;
         overflow: hidden;
-        padding: 0 1rem; /* Начальный паддинг 0 */
+        padding: 0 1rem;
         transition: height 0.3s ease-out, opacity 0.3s ease-out,
           padding 0.3s ease-out;
         margin-top: 0.5rem;
-        background-color: #2c2f33; /* Цвет фона контента */
+        background-color: #2c2f33;
         border-radius: 5px;
         border-top: none;
       }
-
       .rules-accordion-content.active {
         opacity: 1;
-        padding: 0.5rem 1rem; /* Финальный паддинг */
+        padding: 0.5rem 1rem;
       }
-
-      /* Стили для полного списка правил */
       #rules_full .rule-category {
           margin-bottom: 1rem;
       }
-
-      /* Отступы между абзацами в правилах */
       #rules_full p {
-          margin-bottom: 1rem; /* Устанавливаем отступ снизу для каждого абзаца */
+          margin-bottom: 1rem;
       }
     </style>
   </head>
@@ -357,14 +276,11 @@
     <header>
       <div class="container">
         <nav>
-          <!-- Логотип теперь по центру -->
           <div class="logo">BRENTWOOD</div>
         </nav>
       </div>
     </header>
-
     <main class="container">
-      <!-- Главная страница -->
       <section id="home" class="hero">
         <h1>Добро пожаловать на BRENTWOOD!</h1>
         <p>
@@ -375,8 +291,6 @@
           >Присоединиться</a
         >
       </section>
-
-      <!-- Информация -->
       <section id="info">
         <h2>Информация о сервере</h2>
         <p><strong>IP:</strong> 45.11.16.75:7028</p>
@@ -395,15 +309,12 @@
           Погрузитесь в атмосферу Бруклина!
         </p>
       </section>
-
-      <!-- Правила -->
       <section id="rules_full">
         <h2>Правила сервера</h2>
         <p>
           Соблюдение правил — залог комфортной и справедливой игры для всех.
           Незнание правил не освобождает от ответственности.
         </p>
-
         <div class="rules-accordion">
           <div class="rules-accordion-item">
             <div
@@ -587,8 +498,6 @@
               </ul>
             </div>
           </div>
-
-          <!-- Основные правила RolePlay -->
           <div class="rules-accordion-item">
             <div
               class="rules-accordion-header"
@@ -1058,8 +967,6 @@
               </ul>
             </div>
           </div>
-
-          <!-- Дополнительные правила RolePlay -->
           <div class="rules-accordion-item">
             <div
               class="rules-accordion-header"
@@ -1072,7 +979,6 @@
                 В случае нарушение из этого списка, дается бан за 1.1(NonRP).
               </p>
               <ul>
-                <!-- Заменили ol на ul -->
                 <li>
                   Каждый игрок имеет право на самооборону, если по нему начали
                   стрелять или бить, но:
@@ -1199,8 +1105,6 @@
               </ul>
             </div>
           </div>
-
-          <!-- Правила строительства -->
           <div class="rules-accordion-item">
             <div
               class="rules-accordion-header"
@@ -1297,8 +1201,6 @@
               </ul>
             </div>
           </div>
-
-          <!-- Правила профессий -->
           <div class="rules-accordion-item">
             <div
               class="rules-accordion-header"
@@ -1332,11 +1234,11 @@
                       <strong>Общие правила:</strong> Они являются защитниками
                       города и должны пресекать любое нарушение правопорядка.
                       Правоохранительные органы не могут иметь дома. Во время
-                      комендантского Часа, могут проверить дома от двух госов.
-                      Если увидели оружие у человека, то можете проверить на
-                      наличие лицензий. Запрещено использовать оружие без угрозы
-                      для вашей жизни или жизни гражданских. (В остальных
-                      случаях использовать шокер). [Исключение: Если
+                      ком. часа, могут проверить дома от двух госов. Если
+                      увидели оружие у человека, то можете проверить на наличие
+                      лицензий. Запрещено использовать оружие без угрозы для
+                      вашей жизни или жизни гражданских. (В остальных случаях
+                      использовать шокер). [Исключение: Если
                       правоохранительные органы начинают погоню за криминалом и
                       он находится далеко от правоохранительных органов, то они
                       вправе достать оружие и выстрелить предупредительный
@@ -1399,13 +1301,12 @@
                           правильные законы: Игрок или Клан неприкосновенность.
                           Расстрел кто на улице во время ком.часа. Бежать
                           запрещено. Отвечает за работу подразделений во время
-                          комендантского часа и выдает им ордеры но с
-                          адекватными причинами. Может проводить лотерею. Все
-                          Правоохранительные Органы подчиняются вам. Во время
-                          объявления Ком.Часа Мэр Перерыв между Ком.Часами
-                          должен быть минимум 10 минут. Не может стоять АФК
-                          более 5 минут [Увольнение / SetJob за гражданского /
-                          Kick]
+                          ком.часа и выдает им ордеры но с адекватными причинами.
+                          Может проводить лотерею. Все Правоохранительные Органы
+                          подчиняются вам. Во время объявления Ком.Часа Мэр
+                          Перерыв между Ком.Часами должен быть минимум 10 минут.
+                          Не может стоять АФК более 5 минут [Увольнение / SetJob
+                          за гражданского / Kick]
                         </li>
                       </ul>
                     </li>
@@ -1444,8 +1345,6 @@
               </ul>
             </div>
           </div>
-
-          <!-- Правила Администрации -->
           <div class="rules-accordion-item">
             <div
               class="rules-accordion-header"
@@ -1764,8 +1663,6 @@
           </div>
         </div>
       </section>
-
-      <!-- FAQ -->
       <section id="faq">
         <h2>Часто задаваемые вопросы</h2>
         <div class="faq-item">
@@ -1794,8 +1691,6 @@
           </div>
         </div>
       </section>
-
-      <!-- Гайды -->
       <section id="guides">
         <h2>Гайды</h2>
         <div class="faq-item">
@@ -1818,8 +1713,6 @@
           </div>
         </div>
       </section>
-
-      <!-- Бинды -->
       <section id="binds">
         <h2>Бинды</h2>
         <div class="table-container">
@@ -1870,8 +1763,6 @@
           </table>
         </div>
       </section>
-
-      <!-- Контакты -->
       <section id="contact">
         <h2>Связаться с администрацией</h2>
         <p>
@@ -1891,17 +1782,14 @@
         </ul>
       </section>
     </main>
-
     <footer>
       <div class="container">
         <p>&copy; BRENTWOOD</p>
       </div>
     </footer>
-
     <script>
       function toggleAnswer(element) {
         const answer = element.nextElementSibling;
-
         if (answer.classList.contains("active")) {
           answer.style.height = answer.scrollHeight + "px";
           requestAnimationFrame(() => {
@@ -1909,7 +1797,6 @@
             answer.classList.remove("active");
           });
         } else {
-          // Если закрыт, открываем
           answer.classList.add("active");
           answer.style.height = answer.scrollHeight + "px";
           setTimeout(() => {
@@ -1919,40 +1806,25 @@
           }, 300);
         }
       }
-      // Функция для переключения аккордеона правил
       function toggleRulesAccordion(element) {
         const content = element.nextElementSibling;
-
         if (content.classList.contains("active")) {
-          // Если открыт, закрываем
-          content.style.height = content.scrollHeight + "px"; // Установить текущую высоту
+          content.style.height = content.scrollHeight + "px";
           requestAnimationFrame(() => {
             content.style.height = "0";
             content.classList.remove("active");
           });
         } else {
-          // Если закрыт, открываем
           content.classList.add("active");
-          content.style.height = content.scrollHeight + "px"; // Установить высоту содержимого
+          content.style.height = content.scrollHeight + "px";
           setTimeout(() => {
             if (content.classList.contains("active")) {
               content.style.height = "auto";
             }
-          }, 300); // Длительность анимации в мс
+          }, 300);
         }
-
-        // Переключаем класс активности для заголовка
         element.classList.toggle("active");
       }
     </script>
   </body>
 </html>
-
-
-
-
-
-
-
-
-
